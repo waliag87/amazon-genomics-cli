@@ -1,5 +1,5 @@
 ARG SNAKEMAKE_VERSION
-FROM 680431765560.dkr.ecr.us-west-2.amazonaws.com/aws/agc-snakemake:latest AS build
+FROM 987650158744.dkr.ecr.us-west-2.amazonaws.com/aws/agc-snakemake:latest AS build
 
 FROM public.ecr.aws/amazonlinux/amazonlinux:2 AS final
 COPY --from=build  /opt/work/snakemake/ /opt/work/snakemake/
